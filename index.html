@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buff Pepe | BUFP</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="bufp_o.webp">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    <link rel="icon" type="image/webp" href="bufp_o.webp">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="assets/images/load.webp" alt="Buff Pepe Loading">
+            <h3 class="mt-3 text-loading">Loading...</h3>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/buffpepe_header.webp" alt="Buff Pepe Logo" class="logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-to-buy">How to Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Community</a>
+                    </li>
+                </ul>
+                <a href="BuffPaper.pdf" target="_blank" class="btn btn-custom ms-lg-4">BuffPaper</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div id="particles-js" style="position: absolute; width: 100%; height: 90%; top: 0; left: 0; z-index: 1;"></div>
+		<div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold mb-4">Meet <span class="text-green">Buff Pepe</span> <br>The Strongest Meme on Solana</h1>
+                    <p class="lead mb-4">Buff Pepe is not just a meme. It's the gym-buffed evolution of Pepe. This is a major step toward our vision of integrating BUFP into real on-chain games and AI utilities. The journey started as a meme, but the future is built on purpose.</p>
+                    
+                    <div class="address-wrapper">
+					  <button class="address-box" onclick="copyHeroAddress()">
+					    <span id="heroAddress">DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs</span>
+					  </button>
+					  <div id="heroCopiedAlert" class="copied-alert">Copied to clipboard!</div>
+					</div><br>
+
+                    <div class="d-flex flex-wrap gap-3 hero-buttons">
+                        <!---<a href="#exchanges" target="_blank" class="btn btn-custom">Buy $BUFP</a>--->
+                        <a href="https://buffpepe.io/buy" target="_blank" class="btn btn-custom">Buy $BUFP</a>
+                        <a href=" https://t.me/BuffPepe" target="_blank" class="btn btn-outline-custom">Join Community</a>
+                    </div>
+                    <!---<div class="mt-4 d-flex align-items-center hero-stats">
+                        <div class="me-4">
+                            <h4 class="mb-0 text-green"><span class="counter" data-target="1000">0</span>+</h4>
+                            <p class="mb-0 small">Holders</p>
+                        </div>
+                        <div class="me-4">
+                            <h4 class="mb-0 text-green"><span class="counter" data-target="5000">0</span>+</h4>
+                            <p class="mb-0 small">Community</p>
+                        </div>
+                        <div>
+                            <h4 class="mb-0 text-green"><span class="counter" data-target="100">0</span>%</h4>
+                            <p class="mb-0 small">Gains</p>
+                        </div>
+                    </div>--->
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+                    <img src="assets/images/heroimg.webp" alt="Buff Pepe Hero Image" class="hero-img">
+                </div>
+            </div>
+        </div>
+		<!-- Cloud Separator -->
+		<div class="cloud-separator">
+		    <img src="assets/images/cloud.webp" alt="Cloud Separator" class="cloud-img">
+		</div>
+    </section>
+		
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">About <span class="text-green">Buff Pepe</span></h2>
+                    <p class="lead">Buff Pepe is a meme coin redefined, merging entertainment with crypto utility. Built on Solana, driven by a transparent team and long-term roadmap, $BUFP delivers more than hype. It builds a future of community, creativity, and competition.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Fast & Efficient</h4>
+                        <p>Built on Solana's lightning-fast blockchain, Buff Pepe offers near-instantaneous transactions with minimal fees.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community Driven</h4>
+                        <p>Our success is powered by our amazing community. Together, we're building something special that will last.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Strong & Secure</h4>
+                        <p>Just like our mascot, Buff Pepe is built to be strong and secure. Our smart contract is audited and safe.</p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row mt-4">
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                    <h3 class="mb-4">Why Choose <span class="text-green">Buff Pepe</span>?</h3>
+                    <p class="mb-4">Buff Pepe ($BUFP) combines the viral appeal of meme culture with a solid foundation and clear roadmap. While most meme coins come and go, we're building a project with staying power.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-green me-2"></i> Transparent team and operations</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-green me-2"></i> Community-first governance</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-green me-2"></i> Long-term development roadmap</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-green me-2"></i> Strategic partnerships and real-world use cases</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+				    <img src="assets/images/bufp_laptop.webp" alt="Buff Pepe Promo Image" class="img-fluid bufp-laptop" style="max-width: 100%; height: auto;">
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3"><span class="text-green">Token</span>omics</h2>
+                    <p class="lead">Simple and transparent token distribution designed for community growth and project longevity.</p>
+                </div>
+            </div>
+            <div class="row tokenomics-row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="token-circle">
+                        <div class="token-percentage">20%</div>
+                        <div class="token-label">Circulating Supply</div>
+                    </div>
+                    <div class="text-center">
+                        <h5>Public Sale</h5>
+                        <p>Available for trading on DEXs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="token-circle">
+                        <div class="token-percentage">20%</div>
+                        <div class="token-label">Community Treasury</div>
+                    </div>
+                    <div class="text-center">
+                        <h5>Community & Marketing</h5>
+                        <p>Used for giveaways, partnerships, and growth</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="token-circle">
+                        <div class="token-percentage">60%</div>
+                        <div class="token-label">Locked</div>
+                    </div>
+                    <div class="text-center">
+                        <h5>Development Fund</h5>
+                        <p>Allocated for CEX listings, utility rollout and future ecosystem growth with gradual unlock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 offset-md-3">
+                    <div class="token-info-box p-4 rounded shadow-sm">
+                        <h5 class="text-center mb-3">Token Information</h5>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Token Name:</span>
+                            <span class="fw-bold">Buff Pepe</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Token Symbol:</span>
+                            <span class="fw-bold">BUFP</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Blockchain:</span>
+                            <span class="fw-bold">Solana</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Total Supply:</span>
+                            <span class="fw-bold">100,000,000,000,000 BUFP</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Buy/Sell Tax:</span>
+                            <span class="fw-bold">0% / 0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Locked + Burned Info -->
+			<div class="row justify-content-center align-items-center mt-5 gx-5">
+			  <!-- Locked Image -->
+			  <div class="col-md-5 text-center" data-aos="fade-right" data-aos-duration="10">
+			    <img id="lockTrigger" src="assets/images/locked_bufp.webp" alt="Locked 10 Years" style="cursor: pointer; width: 290px; height: auto;" title="Locked 10 Years">
+			  </div>
+			  <!-- Fire (Burned) Image -->
+			  <div class="col-md-5 text-center" data-aos="fade-left" data-aos-duration="10">
+			    <img id="burnToggle" src="assets/images/bufp_fire.webp" alt="BUFP Burned" style="cursor: pointer; width: 220px; height: auto;" title="Click to see burn transactions">
+			  </div>
+			</div>
+			
+			  <!-- Modal Lock Info -->
+			  <div id="lockModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index: 9999; justify-content: center; align-items: center; overflow-y: auto; padding: 20px;">
+				  <div style="background: linear-gradient(to right bottom, #3A9D5D, rgba(15, 15, 25, 0.9)); backdrop-filter: blur(10px); padding: 30px; width: 100%; max-width: 600px; border-radius: 10px; color: var(--text-light); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; text-align: center;">
+				
+				    <button onclick="closeLockModal()" style="position: absolute; top: 15px; right: 20px; font-size: 24px; border: none; background: transparent; color: white; cursor: pointer;">&times;</button>
+				
+				    <h2 style="margin-bottom: 20px;">Token Lock Info</h2>
+				    <p>To ensure transparency and long-term commitment, $BUFP has two active locks on SolSale:</p>
+				
+				    <h3 style="color: var(--pepe-light-green);">Buff Pepe Token Lock</h3>
+				    <p>
+				      <strong>Address:</strong> #1 <a href="https://solscan.io/account/74ZXVLDYiBq971jRCwqWCthhizxDhVQ8zWsJnR3rzzUx" target="_blank" style="color: var(--pepe-light-green); text-decoration: underline;">74ZXVL...3rzzUx</a><br>
+				      <strong>Type:</strong> Token Lock
+				    </p>
+				
+				    <h3 style="color: var(--pepe-light-green);">Team Vesting Lock</h3>
+				    <p>
+				      <strong>Address:</strong> #2 <a href="https://solscan.io/account/7AwDkwqnoXaoLynwNZwK4hHhNmCKFeq8cHChxWS8kG5D" target="_blank" style="color: var(--pepe-light-green); text-decoration: underline;">7AwDkw...S8kG5D</a><br>
+				      <strong>Type:</strong> Team Vesting<br>
+				      <strong>Duration:</strong> 10 years (3,630 days)<br>
+				      <strong>Vesting:</strong> 1/11 ratio
+				    </p>
+				
+				    <h3 style="color: var(--pepe-light-green);">LP Lock</h3>
+				    <p>
+				      <strong>Solsale:</strong> <a href="https://solsale.app/locks/liquidity?id=1745596981000&owner=75T8Z48vc1zg1HUvhymBYFpKWfnEMBGApurdC3o8YX9B" target="_blank" style="color: var(--pepe-light-green); text-decoration: underline;">https://solsale.app/locks/liquidity?id=174559...o8YX9B</a><br>
+				      <strong>Solscan:</strong> <a href="https://solscan.io/tx/5rBtf3D7qDMvHJDJpDjz3TCaX8G15pGm2jryP5RZV977aF5LG1AHzNxZ2aabinxptTcgRVcZaxdHdvy49DqKZKG2" target="_blank" style="color: var(--pepe-light-green); text-decoration: underline;">https://solscan.io/tx/5rBtf3...qKZKG2</a><br>
+				    </p>
+				
+				    <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+				      <a href="https://solsale.app/locks/token?id=1745048614000&owner=75T8Z48vc1zg1HUvhymBYFpKWfnEMBGApurdC3o8YX9B" target="_blank" class="btn btn-custom">Token Lock</a>
+				      <a href="https://solsale.app/locks/token?id=1745010800000&owner=BVvCU1U7kWGKXm6dbwN3QVBLBtEgHw4Xyj7pqkz816Hx" target="_blank" class="btn btn-custom">Team Vesting</a>
+				      <a href="https://solsale.app/locks/project?token=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="btn btn-outline-custom">View All Locks</a>
+				    </div>
+				
+				    <div style="margin-top: 30px;">
+				      <button onclick="closeLockModal()" class="btn btn-custom" style="background: var(--pepe-dark-green);">&times;</button>
+				    </div>
+				
+				  </div>
+				</div>
+
+				<div class="text-center mt-5">
+				  <div id="burnTable" style="display: none; margin-top: 20px; overflow-x: auto; max-width: 100%;">
+				    <div style="background: linear-gradient(to right bottom, #3A9D5D, rgba(15, 15, 25, 0.9)); padding:25px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.2); backdrop-filter:blur(10px);">
+				      <table border="0" cellpadding="10" style="width:100%; border-collapse:collapse; color:#aaffaa; font-size:0.95rem; min-width:320px;">
+				        <thead>
+				          <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
+				            <th style="padding:12px;">Transaction Hash</th>
+				            <th style="padding:12px;">Quantity</th>
+				            <th style="padding:12px;">Explorer</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+				            <td style="padding:10px; word-break:break-all; overflow-wrap:break-word;">3AYcMYPsrDPjio1N8uQRC5sBm3nAXgm9VkvbmaAG9qjwv7T1DjvhKXH4vp7ayUFBMdJMSySZ6MDZS4wKXBrRNed</td>
+				            <td style="padding:10px;">50,000,000,000</td>
+				            <td style="padding:10px;"><a href="https://solscan.io/tx/3AYcMYPsrDPjio1N8uQRC5sBm3nAXgm9VkvbmaAG9qjwv7T1DjvhKXH4vp7ayUFBMdJMSySZ6MDZS4wKXBrRNed" target="_blank" style="color:#7FFFD4;">View</a></td>
+				          </tr>
+				          <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+				            <td style="padding:10px; word-break:break-all; overflow-wrap:break-word;">29eZt2fkMBDGixND9nvg25aGjBf84ie5YkDthNTzqwacqn1LpAQxRndYHvGxceFLzupts7uw8yLVsfQn47x1WC82</td>
+				            <td style="padding:10px;">50,000,000,000</td>
+				            <td style="padding:10px;"><a href="https://solscan.io/tx/29eZt2fkMBDGixND9nvg25aGjBf84ie5YkDthNTzqwacqn1LpAQxRndYHvGxceFLzupts7uw8yLVsfQn47x1WC82" target="_blank" style="color:#7FFFD4;">View</a></td>
+				          </tr>
+				          <tr>
+				            <td style="padding:10px; word-break:break-all; overflow-wrap:break-word;">3pQry511GdHVxWuccezkDtK4WK4nhQCQWiCj2L8jRdPvRuGgHUTvHvmWkNnZwWyUhWYdcfViFLBAS7h7pb15KA8b</td>
+				            <td style="padding:10px;">50,000,000,000</td>
+				            <td style="padding:10px;"><a href="https://solscan.io/tx/3pQry511GdHVxWuccezkDtK4WK4nhQCQWiCj2L8jRdPvRuGgHUTvHvmWkNnZwWyUhWYdcfViFLBAS7h7pb15KA8b" target="_blank" style="color:#7FFFD4;">View</a></td>
+				          </tr>
+				        </tbody>
+				      </table>
+				    </div>
+				  </div>
+				</div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">Our <span class="text-green">Roadmap</span></h2>
+                    <p class="lead">Strategic milestones to bring Buff Pepe to the next level.</p>
+                </div>
+            </div>
+            <div class="roadmap-container">
+                <div class="roadmap-item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="roadmap-dot"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-date">Phase 1: Q2 2025</div>
+                        <h4>Launch & Community Building</h4>
+                        <ul>
+                            <li>Website and social media launch</li>
+                            <li>Token launch on Solana blockchain</li>
+                            <li>Initial DEX listings (Raydium, Jupiter)</li>
+                            <li>Community building - 5,000 members</li>
+                            <li>First marketing campaign</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="roadmap-dot"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-date">Phase 2: Q3 2025</div>
+                        <h4>Expansion & Partnerships</h4>
+                        <ul>
+                            <li>CEX listings (Tier 2 exchanges)</li>
+                            <li>Strategic partnerships with other Solana projects</li>
+                            <li>Community expansion - 20,000 members</li>
+                            <li>Launch of Buff Pepe NFT collection</li>
+                            <li>Enhanced marketing campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="roadmap-dot"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-date">Phase 3: Q4 2025</div>
+                        <h4>Utility Integration</h4>
+                        <ul>
+							<li>Development of Buff World competitive gaming arena with burn mechanics</li>
+							<li>Metaverse integration for creators and token projects via BUFP and native token locking</li>
+							<li>Major CEX listings (Tier 1 exchanges)</li>
+							<li>Cross-chain expansion planning</li>
+							<li>Community governance implementation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="roadmap-dot"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-date">Phase 4: Q1 2026</div>
+                        <h4>Ecosystem Expansion</h4>
+                        <ul>
+							<li>Cross-chain bridges deployment</li>
+							<li>Launch of Buff Pepe DAO</li>
+							<li>Major partnerships and integrations</li>
+							<li>Planning and evaluation for next development cycle</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="roadmap-dot"></div>
+                    <div class="roadmap-content">
+                        <div class="roadmap-date">Future Phase</div>
+                        <h4>Long-Term Vision</h4>
+                        <ul>
+							<li>Public launch of AI Creation Suite</li>
+							<li>Smart Oracle integration for on-chain game mechanics</li>
+							<li>Land-based economy activation in Buff World</li>
+							<li>Expansion to multichain compatibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="how-to-buy">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">How to <span class="text-green">Buy</span></h2>
+                    <p class="lead">Getting your hands on $BUFP is quick and easy. Follow these simple steps.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="step-box">
+                        <div class="step-number">1</div>
+                        <h5>Create a Wallet</h5>
+                        <p>Download and set up a Solana-compatible wallet like Phantom or Solflare.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="step-box">
+                        <div class="step-number">2</div>
+                        <h5>Buy SOL</h5>
+                        <p>Purchase SOL from an exchange and transfer it to your wallet.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="step-box">
+                        <div class="step-number">3</div>
+                        <h5>Connect to DEX</h5>
+                        <p>Visit Raydium or Jupiter and connect your wallet.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="step-box">
+                        <div class="step-number">4</div>
+                        <h5>Swap for $BUFP</h5>
+                        <p>Swap your SOL for $BUFP tokens and join the community!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-8 offset-lg-2 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="token-info-box p-4 rounded shadow-sm">
+                        <div class="card-body p-5">
+                            <h4 class="mb-4">Ready to join the Buff Pepe family?</h4>
+                            <p class="mb-4">Get $BUFP tokens now on your preferred platform. The earlier you join, the more gains you'll potentially see!</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-3">
+                                <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs&inputMint=sol&outputMint=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="btn btn-custom">
+                                    <i class="fas fa-exchange-alt me-2"></i> Buy on Raydium
+                                </a>
+                                <a href="https://jup.ag/swap/SOL-DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="btn btn-custom">
+                                    <i class="fas fa-exchange-alt me-2"></i> Buy on Jupiter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Chart Section -->
+	<section id="chart" style="background-color: #0A0A0A; padding: 100px 0;">
+	  <div class="container">
+	    <div class="row justify-content-center mb-5">
+	      <div class="col-lg-6 text-center">
+	        <h2 class="fw-bold mb-3">Live <span class="text-green">Price Chart</span></h2>
+	        <p class="lead">Track $BUFP price and trading volume in real-time on Solana.</p>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-12">
+	        <div style="background: #121212; border-radius: 15px; padding: 20px; box-shadow: 0 0 30px rgba(0,255,0,0.1);">
+	          <iframe 
+	            src="https://birdeye.so/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs?chain=solana" 
+	            style="width: 100%; height: 700px; border: none; border-radius: 12px;"
+	            allowfullscreen 
+	            loading="lazy"></iframe>
+	          <!---<div class="text-center mt-4">
+			    <div class="row justify-content-center align-items-center g-3">
+			      <div class="col-12 col-md-auto">
+			        <a href="https://solscan.io/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 8px;">
+			          <img src="assets/images/solscan.webp" alt="Solscan" style="height: 30px;"> Solscan
+			        </a>
+			      </div>
+			      <div class="col-12 col-md-auto">
+			        <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 8px;">
+			          <img src="assets/images/cmc.webp" alt="CoinMarketCap" style="height: 30px;"> CoinMarketCap
+			        </a>
+			      </div>
+			      <div class="col-12 col-md-auto">
+			        <a href="#" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; gap: 8px;">
+			          <img src="assets/images/coingecko.webp" alt="CoinGecko" style="height: 30px;"> CoinGecko
+			        </a>
+			      </div>
+			    </div>
+			  </div>--->
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- Logo Marquee Section -->
+	<div class="marquee-wrapper">
+	  <div class="marquee-inner">
+		<div class="marquee-track">
+		  <a href="#" target="_blank"><img src="assets/images/cmc.webp" alt="CoinMarketCap"><span>CoinMarketCap</span></a>
+		  <a href="#" target="_blank"><img src="assets/images/coingecko.webp" alt="coingecko"><span>Coingecko</span></a>
+		  <a href="https://www.livecoinwatch.com/price/BuffPepe-BUFP" target="_blank"><img src="assets/images/livecoinwatch.webp" alt="Live Coin Watch"><span>Live Coin Watch</span></a>
+		  <a href="https://moralis.com/chain/solana/token/price/buff-pepe-13" target="_blank"><img src="assets/images/moralis.webp" alt="Moralis"><span>Moralis</span></a>
+		  <a href="https://coinpaprika.com/coin/bufp-buff-pepe/" target="_blank"><img src="assets/images/coinpaprika.webp" alt="CoinPaprika"><span>CoinPaprika</span></a>
+		  <a href="https://coinranking.com/coin/JEE-kGFLo+buffpepe-bufp" target="_blank"><img src="assets/images/coinranking.webp" alt="Coinranking"><span>Coinranking</span></a>
+		  <a href="https://coinsniper.net/coin/81387" target="_blank"><img src="assets/images/coinsniper.webp" alt="COINSNIPER.NET"><span>COINSNIPER.NET</span></a>
+		  <a href="https://coinmooner.com/coins/buff-pepe-bufp" target="_blank"><img src="assets/images/coinmooner.webp" alt="Coinmooner"><span>Coinmooner</span></a>
+		  <a href="https://top100token.com/address/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/top100.webp" alt="TOP100TOKEN"><span>TOP100TOKEN</span></a>
+		  <a href="https://blockspot.io/coin/buff-pepe/" target="_blank"><img src="assets/images/blockspot.webp" alt="Blockspot"><span>Blockspot</span></a>
+		  <a href="https://www.coinscope.co/coin/bufp" target="_blank"><img src="assets/images/coinscope.webp" alt="Coinscope"><span>Coinscope</span></a>
+		  <a href="https://coinhunt.cc/coin/6816e44b67eb8235bb0c37f3" target="_blank"><img src="assets/images/coinhunt.webp" alt="Coinhunt"><span>Coinhunt</span></a>
+		  <a href="https://solscan.io/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/solscan.webp" alt="Solscan"><span>Solscan</span></a>
+		  <a href="https://birdeye.so/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs?chain=solana" target="_blank"><img src="assets/images/birdeye.webp" alt="Birdeye"><span>Birdeye</span></a>
+		  <a href="https://dexscreener.com/solana/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/dexscreener.webp" alt="DEX SCREENER"><span>DEX SCREENER</span></a>
+		  <a href="https://www.dextools.io/app/en/solana/pair-explorer/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/dextools.webp" alt="DEXTools"><span>DEXTools</span></a>
+		  <a href="https://www.geckoterminal.com/solana/tokens/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/geckoterminal.webp" alt="Geckoterminal"><span>Geckoterminal</span></a>
+		  <a href="https://photon-sol.tinyastro.io/en/lp/Eev73stPeP4NVx5QdfeCSGbGfEyJ1r6tMsP5xV9MAeA4" target="_blank"><img src="assets/images/photon.webp" alt="PHOTON"><span>PHOTON</span></a>
+		  <a href="https://gmgn.ai/sol/token/solscan_DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/gmgn.webp" alt="GMGN"><span>GMGN</span></a>
+		  <!-- Duplicate for seamless loop -->
+		  <a href="#" target="_blank"><img src="assets/images/cmc.webp" alt="CoinMarketCap"><span>CoinMarketCap</span></a>
+		  <a href="#" target="_blank"><img src="assets/images/coingecko.webp" alt="coingecko"><span>Coingecko</span></a>
+		  <a href="https://www.livecoinwatch.com/price/BuffPepe-BUFP" target="_blank"><img src="assets/images/livecoinwatch.webp" alt="Live Coin Watch"><span>Live Coin Watch</span></a>
+		  <a href="https://moralis.com/chain/solana/token/price/buff-pepe-13" target="_blank"><img src="assets/images/moralis.webp" alt="Moralis"><span>Moralis</span></a>
+		  <a href="https://coinpaprika.com/coin/bufp-buff-pepe/" target="_blank"><img src="assets/images/coinpaprika.webp" alt="CoinPaprika"><span>CoinPaprika</span></a>
+		  <a href="https://coinranking.com/coin/JEE-kGFLo+buffpepe-bufp" target="_blank"><img src="assets/images/coinranking.webp" alt="Coinranking"><span>Coinranking</span></a>
+		  <a href="https://coinsniper.net/coin/81387" target="_blank"><img src="assets/images/coinsniper.webp" alt="COINSNIPER.NET"><span>COINSNIPER.NET</span></a>
+		  <a href="https://coinmooner.com/coins/buff-pepe-bufp" target="_blank"><img src="assets/images/coinmooner.webp" alt="Coinmooner"><span>Coinmooner</span></a>
+		  <a href="https://top100token.com/address/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/top100.webp" alt="TOP100TOKEN"><span>TOP100TOKEN</span></a>
+		  <a href="https://blockspot.io/coin/buff-pepe/" target="_blank"><img src="assets/images/blockspot.webp" alt="Blockspot"><span>Blockspot</span></a>
+		  <a href="https://www.coinscope.co/coin/bufp" target="_blank"><img src="assets/images/coinscope.webp" alt="Coinscope"><span>Coinscope</span></a>
+		  <a href="https://coinhunt.cc/coin/6816e44b67eb8235bb0c37f3" target="_blank"><img src="assets/images/coinhunt.webp" alt="Coinhunt"><span>Coinhunt</span></a>
+		  <a href="https://solscan.io/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/solscan.webp" alt="Solscan"><span>Solscan</span></a>
+		  <a href="https://birdeye.so/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs?chain=solana" target="_blank"><img src="assets/images/birdeye.webp" alt="Birdeye"><span>Birdeye</span></a>
+		  <a href="https://dexscreener.com/solana/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/dexscreener.webp" alt="DEX SCREENER"><span>DEX SCREENER</span></a>
+		  <a href="https://www.dextools.io/app/en/solana/pair-explorer/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/dextools.webp" alt="DEXTools"><span>DEXTools</span></a>
+		  <a href="https://www.geckoterminal.com/solana/tokens/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/geckoterminal.webp" alt="Geckoterminal"><span>Geckoterminal</span></a>
+		  <a href="https://photon-sol.tinyastro.io/en/lp/Eev73stPeP4NVx5QdfeCSGbGfEyJ1r6tMsP5xV9MAeA4" target="_blank"><img src="assets/images/photon.webp" alt="PHOTON"><span>PHOTON</span></a>
+		  <a href="https://gmgn.ai/sol/token/solscan_DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/gmgn.webp" alt="GMGN"><span>GMGN</span></a>
+		  <!-- Duplicate for seamless loop -->
+		  <a href="#" target="_blank"><img src="assets/images/cmc.webp" alt="CoinMarketCap"><span>CoinMarketCap</span></a>
+		  <a href="#" target="_blank"><img src="assets/images/coingecko.webp" alt="coingecko"><span>Coingecko</span></a>
+		  <a href="https://www.livecoinwatch.com/price/BuffPepe-BUFP" target="_blank"><img src="assets/images/livecoinwatch.webp" alt="Live Coin Watch"><span>Live Coin Watch</span></a>
+		  <a href="https://moralis.com/chain/solana/token/price/buff-pepe-13" target="_blank"><img src="assets/images/moralis.webp" alt="Moralis"><span>Moralis</span></a>
+		  <a href="https://coinpaprika.com/coin/bufp-buff-pepe/" target="_blank"><img src="assets/images/coinpaprika.webp" alt="CoinPaprika"><span>CoinPaprika</span></a>
+		  <a href="https://coinranking.com/coin/JEE-kGFLo+buffpepe-bufp" target="_blank"><img src="assets/images/coinranking.webp" alt="Coinranking"><span>Coinranking</span></a>
+		  <a href="https://coinsniper.net/coin/81387" target="_blank"><img src="assets/images/coinsniper.webp" alt="COINSNIPER.NET"><span>COINSNIPER.NET</span></a>
+		  <a href="https://coinmooner.com/coins/buff-pepe-bufp" target="_blank"><img src="assets/images/coinmooner.webp" alt="Coinmooner"><span>Coinmooner</span></a>
+		  <a href="https://top100token.com/address/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/top100.webp" alt="TOP100TOKEN"><span>TOP100TOKEN</span></a>
+		  <a href="https://blockspot.io/coin/buff-pepe/" target="_blank"><img src="assets/images/blockspot.webp" alt="Blockspot"><span>Blockspot</span></a>
+		  <a href="https://www.coinscope.co/coin/bufp" target="_blank"><img src="assets/images/coinscope.webp" alt="Coinscope"><span>Coinscope</span></a>
+		  <a href="https://coinhunt.cc/coin/6816e44b67eb8235bb0c37f3" target="_blank"><img src="assets/images/coinhunt.webp" alt="Coinhunt"><span>Coinhunt</span></a>
+		  <a href="https://solscan.io/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/solscan.webp" alt="Solscan"><span>Solscan</span></a>
+		  <a href="https://birdeye.so/token/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs?chain=solana" target="_blank"><img src="assets/images/birdeye.webp" alt="Birdeye"><span>Birdeye</span></a>
+		  <a href="https://dexscreener.com/solana/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/dexscreener.webp" alt="DEX SCREENER"><span>DEX SCREENER</span></a>
+		  <a href="https://www.dextools.io/app/en/solana/pair-explorer/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/dextools.webp" alt="DEXTools"><span>DEXTools</span></a>
+		  <a href="https://www.geckoterminal.com/solana/tokens/DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/geckoterminal.webp" alt="Geckoterminal"><span>Geckoterminal</span></a>
+		  <a href="https://photon-sol.tinyastro.io/en/lp/Eev73stPeP4NVx5QdfeCSGbGfEyJ1r6tMsP5xV9MAeA4" target="_blank"><img src="assets/images/photon.webp" alt="PHOTON"><span>PHOTON</span></a>
+		  <a href="https://gmgn.ai/sol/token/solscan_DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank"><img src="assets/images/gmgn.webp" alt="GMGN"><span>GMGN</span></a>
+		</div>
+	  </div>
+	</div>
+
+	<style>
+	.marquee-wrapper {
+	  background: #333;
+	  overflow: hidden;
+	  padding: 30px 0;
+	  position: relative;
+	}
+
+	.marquee-inner {
+	  width: 100%;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  box-sizing: border-box;
+	}
+
+	.marquee-track {
+	  display: inline-flex;
+	  animation: scrollMarquee 60s linear infinite;
+	  align-items: center;
+	  gap: 80px;
+	}
+
+	.marquee-track a {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  text-decoration: none;
+	  color: white;
+	  font-size: 18px;
+	  min-width: 100px;
+	  transition: transform 0.3s ease;
+	}
+
+	.marquee-track a:hover {
+	  transform: scale(1.1);
+	}
+
+	.marquee-track img {
+	  height: 50px;
+	  margin-bottom: 8px;
+	}
+
+	@keyframes scrollMarquee {
+	  0% {
+		transform: translateX(0%);
+	  }
+	  100% {
+		transform: translateX(-50%);
+	  }
+	}
+	</style>
+
+    <!-- Exchanges & Dapps Section -->
+	<section id="exchanges">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-lg-6 text-center">
+					<h2 class="fw-bold mb-3">Exchanges & <span class="text-green">Dapps</span></h2>
+					<p class="lead">Get $BUFP across these trusted platforms.</p>
+				</div>
+			</div>
+			
+			<div class="row mb-5">
+				<div class="col-12 text-center mb-4">
+					<h4 class="mb-4">Centralized Exchanges</h4>
+					<div class="exchanges-container" data-aos="fade-up" data-aos-duration="1000">
+						<div class="exchange-logo coming-soon">
+							<div class="placeholder-circle">
+								<span>?</span>
+							</div>
+							<p>Coming Soon</p>
+						</div>
+						<div class="exchange-logo coming-soon">
+							<div class="placeholder-circle">
+								<span>?</span>
+							</div>
+							<p>Coming Soon</p>
+						</div>
+						<div class="exchange-logo coming-soon">
+							<div class="placeholder-circle">
+								<span>?</span>
+							</div>
+							<p>Coming Soon</p>
+						</div>
+						<div class="exchange-logo coming-soon">
+							<div class="placeholder-circle">
+								<span>?</span>
+							</div>
+							<p>Coming Soon</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h4 class="mb-4">Decentralized Exchanges</h4>
+					<div class="exchanges-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+						<!-- Raydium -->
+						<a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs&inputMint=sol&outputMint=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="exchange-logo d-inline-block text-decoration-none">
+							<img src="assets/images/raydium.webp" alt="Raydium" class="img-fluid" style="border-radius: 100%;">
+							<p class="mt-2">Raydium</p>
+						</a>
+						
+						<!-- Jupiter -->
+						<a href="https://jup.ag/swap/SOL-DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="exchange-logo d-inline-block text-decoration-none">
+							<img src="assets/images/jupiter-logo.webp" alt="Jupiter" class="img-fluid" style="height: 80%;">
+							<p class="mt-2">Jupiter</p>
+						</a>
+						
+						<!-- PumpSwap -->
+						<a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="exchange-logo d-inline-block text-decoration-none">
+							<img src="assets/images/pumpswap.webp" alt="PumpSwap" class="img-fluid" style="height: 80%;">
+							<p class="mt-2">PumpSwap</p>
+						</a>
+						
+						<!-- Orca -->
+						<a href="https://www.orca.so/?tokenIn=So11111111111111111111111111111111111111112&tokenOut=DuAEEDuCyNounLZ2AnUVZ4cBFXqkXGrWdgzaLKUmKzEs" target="_blank" class="exchange-logo d-inline-block text-decoration-none">
+							<img src="assets/images/orca.webp" alt="Orca" class="img-fluid" style="height: 80%;">
+							<p class="mt-2">Orca</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">Frequently <span class="text-green">Asked</span> Questions</h2>
+                    <p class="lead">Everything you need to know about Buff Pepe ($BUFP).</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is Buff Pepe ($BUFP)?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Buff Pepe ($BUFP) is a community-driven meme coin built on the Solana blockchain. It combines the fun and virality of meme culture with a strong foundation, clear roadmap, and genuine utility plans. Our mission is to create a project that's not just another meme coin, but a long-term investment with real value.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Why choose Solana blockchain?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We chose Solana for its incredible speed, low transaction costs, and growing ecosystem. With Solana, users can enjoy near-instantaneous transactions with minimal fees, making it perfect for a community-focused project like Buff Pepe. The Solana ecosystem is also rapidly expanding, providing numerous opportunities for partnerships and growth.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Is the contract audited?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, the Buff Pepe ($BUFP) smart contract has been fully audited by a reputable security firm to ensure it's safe and secure for all users. Security is a top priority for us, and we've taken every precaution to protect our community's investments. The audit report is available on our website for complete transparency.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What are the future plans for Buff Pepe?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our roadmap outlines our ambitious plans for Buff Pepe. These include expanding to major exchanges, developing a staking platform, launching an NFT collection, creating a play-to-earn game, and implementing community governance through a DAO. We're committed to building a comprehensive ecosystem around $BUFP that provides real value to our community.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">Join Our <span class="text-green">Community</span></h2>
+                    <p class="lead">Become part of the strongest and most dedicated crypto community in the meme coin space.</p>
+                </div>
+            </div>
+            <div class="row communities-row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="community-card">
+                        <div class="community-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h4>Telegram Channel</h4>
+                        <p>Join our active Telegram community for the latest updates and discussions.</p>
+                        <a href="https://t.me/BuffPepeOfficial" class="btn btn-custom mt-3">Join Channel</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="community-card">
+                        <div class="community-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h4>Join Our Telegram Group</h4>
+                        <p>Join our active Group for the latest updates and discussions.</p>
+                        <a href="https://t.me/buffpepe" class="btn btn-custom mt-3">Join Telegram</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="community-card">
+                        <div class="community-icon">
+                            <i class="bi bi-twitter-x"></i>
+                        </div>
+                        <h4>Follow us on X (Twitter) </h4>
+                        <p>Follow us on X for announcements, memes, and community highlights..</p>
+                        <a href="https://x.com/BuffPepe_io" class="btn btn-custom mt-3">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+    
+                <!-- Logo and Description -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <img src="assets/images/buffpepe.webp" alt="Buff Pepe Logo" style="height: 50px;">
+                    </h6>
+                    <p>
+                        Buff Pepe is not just a meme. It's the gym-buffed evolution of Pepe. This is a major step toward our vision of integrating BUFP into real on-chain games and AI utilities. The journey started as a meme, but the future is built on purpose.
+                    </p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Quick Links
+                    </h6>
+                    <p><a href="#hero" class="text-reset" style="text-decoration: none;">Home</a></p>
+                    <p><a href="#about" class="text-reset" style="text-decoration: none;">About</a></p>
+                    <p><a href="#tokenomics" class="text-reset" style="text-decoration: none;">Tokenomics</a></p>
+                    <p><a href="#roadmap" class="text-reset" style="text-decoration: none;">Roadmap</a></p>
+                    <p><a href="#how-to-buy" class="text-reset" style="text-decoration: none;">How to Buy</a></p>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+						<a href="https://www.youtube.com/@BuffPepe_io" class="text-white fs-4" target="_blank"><i class="fab fa-youtube"></i></a>
+						<a href="https://www.tiktok.com/@buffpepe" class="text-white fs-4" target="_blank"><i class="fab fa-tiktok"></i></a>
+						<a href="https://x.com/BuffPepe_io" class="text-white fs-4" target="_blank"><i class="bi bi-twitter-x"></i></a>
+						<a href="https://t.me/BuffPepeOfficial" class="text-white fs-4" target="_blank"><i class="fab fa-telegram"></i></a>
+						<a href="https://discord.gg/rKQQAunUF6" class="text-white fs-4" target="_blank"><i class="fab fa-discord"></i></a>
+						<a href="https://www.reddit.com/r/BuffPepe/" class="text-white fs-4" target="_blank"><i class="fab fa-reddit"></i></a>
+						<a href="https://github.com/BuffPepe" class="text-white fs-4" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://medium.com/@buffpepe" class="text-white fs-4" target="_blank"><i class="fab fa-medium"></i></a>
+						<a href="https://buffpepe.io/" class="text-white fs-4" target="_blank"><i class="fas fa-globe"></i></a>
+						<a href="mailto:cex@buffpepe.io" class="text-white fs-4" title="Are you a CEX and want to offer BUFP listing with attractive terms?" target="_blank"><i class="fas fa-envelope"></i></a>
+					</div>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="background-color: rgba(255,255,255,0.1);">
+    
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Buff Pepe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buy Button -->
+    <div class="floating-buy">
+        <a href="#how-to-buy" class="floating-btn">
+            <i class="fas fa-rocket"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
