@@ -62,10 +62,15 @@ Feel free to fork this repo, open a pull request, or submit issues.
 ## 📬 Connect with Us
 
 - 🌐 Website: [buffpepe.io](https://buffpepe.io)
-- 🐦 Twitter: [@BuffPepe_io](https://x.com/BuffPepe_io)
-- 💬 Telegram: [BuffPepeOfficial](https://t.me/BuffPepeOfficial)
-- 🧠 GitHub: [github.com/buffpepe](https://github.com/buffpepe)
-- 📺 YouTube: [@buffpepe](https://youtube.com/@buffpepe)
+- 🐦 Twitter/X: [@BuffPepe_io](https://x.com/BuffPepe_io)
+- 💬 Telegram Group: [@buffpepe](https://t.me/buffpepe)
+- 📢 Telegram Channel: [@BuffPepeOfficial](https://t.me/BuffPepeOfficial)
+- 💻 GitHub: [github.com/buffpepe](https://github.com/buffpepe)
+- 📺 YouTube: [@BuffPepe_io](https://www.youtube.com/@BuffPepe_io)
+- 🎵 TikTok: [@buffpepe](https://www.tiktok.com/@buffpepe)
+- 💬 Discord: [discord.gg/rKQQAunUF6](https://discord.gg/rKQQAunUF6)
+- 👽 Reddit: [r/BuffPepe](https://www.reddit.com/r/BuffPepe/)
+- ✍️ Medium: [@buffpepe](https://medium.com/@buffpepe)
 
 ---
 
